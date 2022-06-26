@@ -4,6 +4,7 @@ import "./loginedPage.scss";
 import Card from "../../component/card/card";
 import editicon from "../../../assets/editicon.png";
 import search from "../../../assets/search.png";
+import Button from "../../component/button/button";
 
 const postType = [
   { title: "Website", img: editicon, color: "#552F7C", type: "website" },
@@ -66,12 +67,7 @@ const LoginedPage = () => {
               <button>Social media poster</button>
               <button>New Site</button>
               <button>New Blog</button>
-              <form>
-                <input placeholder="Search" />
-                <button type="submit">
-                  <img src={search}></img>
-                </button>
-              </form>
+              <Button icon={search} />
               <select>
                 <option>Sort by</option>
                 <option>Sort by1</option>
